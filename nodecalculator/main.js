@@ -10,15 +10,15 @@ let operation = readline.question("What operation would you like to perform? add
 
 const calculatorFunction = () => {
     if (operation === 'add') {
-        console.log(num1 + num2);
+        console.log('The result is: ' num1 + num2);
     } else if (operation === 'sub') {
-        console.log(num1 - num2);
+        console.log('The result is: ' num1 - num2);
     } else if (operation === 'mul') {
-        console.log(num1 * num2)
+        console.log('The result is: ' num1 * num2)
     } else if (operation === 'div') {
-        console.log(num1 / num2)
+        console.log('The result is: ' num1 / num2)
     } else {
-        operation = readline.question("Please enter exactly add, sub, mul or div ")
+        operation = readline.question("Please enter exactly add, sub, mul, or div ")
         calculatorFunction()
     }
 }
