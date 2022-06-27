@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+div {
+    display: block;
+    padding: 40px 0px;
+    border: 2px solid white;
+}
+
+.rowOne {
+    background-color: #F5C6D6;;
+}
+
+.rowTwo {
+    background-color: #EE2E84;
+}
+
+.rowThree {
+    background-color: #85CFD8;
+}
+
+#green {
+    background-color: #8DC63F;
+}
+
+#orange {
+    background-color: #E76E34;
+}
+
+@media only screen and (min-width: 768px) {
+    div {
+        display: inline-block;
+    }
+    
+    .rowOne {
+    width: 100%;
+    }
+
+    .rowTwo{
+        width: 25%
+    }
+
+    .rowThree {
+        width: 50%;
+    }
+
+    #green {
+        width: 75%;
+    }
+
+    #orange {
+        width: 25%;
+    }
+}
