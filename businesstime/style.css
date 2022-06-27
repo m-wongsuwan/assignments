@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(254, 2247, 216);
+    color: rgb(12, 29, 54);
+    font-family: "IBM Plex Serif", serif;
+}
+
+a {
+    color: rgb(254, 2247, 216);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+h1 {
+    font-size: 5em;
+    text-align: center;
+    color: rgb(254, 2247, 216);
+    background-color: rgb(12, 29, 54);
+    padding: 30px 0px;
+    margin: 10px 0px;
+}
+h2 {
+    color: rgb(254, 2247, 216);
+    background-color: rgb(12, 29, 54);
+    text-align: center;
+    padding: 10px;
+    font-size: 3em;
+    margin: 0px;
+}
+p, li {
+    font-size: 20px;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+    margin: 0px
+}
+
+.headerIMG {
+    width: 100%;
+}
+
+.headerFlexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    /* height: 40px; */
+
+}
+
+.headerFlexContainer div {
+    background-color: rgb(12, 29, 54);
+}
+
+.headerFlexContainer div {
+    width: 23%;
+    padding: 20px 0px;
+    color: rgb(254, 2247, 216);
+}
+
+footer img {
+    height: 80px;
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(12, 29, 54);
+    color: rgb(254, 2247, 216);
+}
+footer p {
+    padding: 10px 10px;
+    float: right;
+}
+
+
+@media only screen and (min-width: 850px) {
+    /* html, body {
+        background-color: blueviolet;
+    } */
+    .bodyFlexContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    #bodyFlexContainer div {
+        width: 50%;
+    }
+
+    .imgContainer, .textContainer {
+        width: 50%;
+    }
+
+    .right {
+        flex-direction: row-reverse;
+    }
+}
