@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+    background-color: hsl(303, 16%, 90%);
+}
+
+.calcs {
+    width: 375px;
+    margin: 0px auto;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(83, 145, 126);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.aPos, .bPos, .cPos, .dPos, .ePos {
+    text-align: center;
+    height: 75px;
+    width: 19%;
+    position: relative;
+    top: 0px;
+    margin: 5px;
+}
+    
+.aPos, .bPos, .cPos {
+    font-size: 30px;
+}
+
+/* .aPos {
+    background-color: rgb(180, 166, 171);
+} */
+
+.bPos {
+    background-color: white;
+}
+
+/* .cPos {
+    background-color: rgb(180, 166, 171);
+} */
+
+.dPos {
+    font-size: 15px;
+    background-color: hsl(303, 16%, 25%);
+    color: white;
+}
+
+.ePos {
+    /* background-color: rgb(180, 166, 171); */
+    font-size: 15px;
+}
+
+form {
+    margin: 20px auto;
+    display: flex;
+
+}
+
+@media only screen and (min-width: 750px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .calcs {
+        width: 600px;
+    }
+
+    .aPos, .bPos, .cPos, .dPos, .ePos {
+    height: 100px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .calcs {
+        width: 800px;
+    }
+
+    .aPos, .bPos, .cPos, .dPos, .ePos {
+    height: 130px;
+    }
+}

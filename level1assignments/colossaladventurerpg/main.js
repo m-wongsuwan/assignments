@@ -125,12 +125,9 @@ const encounter = () => {
     }
     console.log(`"${monster.encounterMessage}"`)
     let encounterChoice = readline.question(`You encounter ${monster.name}, will you "run" or "fight"? `)
-    if (encounterChoice !== 'run' && encounterChoice !== 'fight') {
-        console.log(`You must enter either "run" or "fight" exactly.`)
-        encounterChoice = readline.question(`You encounter ${monster.name}, will you "run" or "fight"? `)
-    }
-    if (encounterChoice.toLowerCase() === "fight"){
-        while (monstEncounterHealth > 0 && wantsToPlay === true && encounterChoice.toLowerCase() === 'fight') {
+
+    let fightFunction = () => {
+        while (monstEncounterHealth > 0 && wantsToPlay === true && encounterChoice === 'fight') {
             if ( playerInfo.health > 0 && monstEncounterHealth >= 0) {
                 let playerStrikeDamage = Math.floor(Math.random() * 10 * atkBonus)
                 monstEncounterHealth -= playerStrikeDamage
@@ -140,10 +137,31 @@ const encounter = () => {
                 console.log(`${monster.name} attacks for ${monsterStrikeDamage} damage, you have ${playerInfo.health} hp left!`)
             } else if (playerInfo.health <= 0) {
                 console.log(`You died, loser!`)
-                wantsToPlay === false
                 playAgain()
             }
         }
+    }
+
+    if (encounterChoice !== 'run' && encounterChoice !== 'fight') {
+        console.log(`You must enter either "run" or "fight" exactly.`)
+        encounterChoice = readline.question(`You encounter ${monster.name}, will you "run" or "fight"? `)
+    }
+    if (encounterChoice.toLowerCase() === "fight"){
+        fightFunction()
+        // while (monstEncounterHealth > 0 && wantsToPlay === true && encounterChoice.toLowerCase() === 'fight') {
+        //     if ( playerInfo.health > 0 && monstEncounterHealth >= 0) {
+        //         let playerStrikeDamage = Math.floor(Math.random() * 10 * atkBonus)
+        //         monstEncounterHealth -= playerStrikeDamage
+        //         let monsterStrikeDamage = Math.floor(Math.random() * 10 * monster.attackModifier * defBonus)
+        //         playerInfo.health -= monsterStrikeDamage
+        //         console.log(`You attack for ${playerStrikeDamage} damage, ${monster.name} has ${monstEncounterHealth} hp left!`)
+        //         console.log(`${monster.name} attacks for ${monsterStrikeDamage} damage, you have ${playerInfo.health} hp left!`)
+        //     } else if (playerInfo.health <= 0) {
+        //         console.log(`You died, loser!`)
+        //         wantsToPlay === false
+        //         playAgain()
+        //     }
+        // }
         if (wantsToPlay === true){
             if (playerInfo.health <= 0) {
                 console.log(`You defeated your enemy, but at what cost? You yourself have died.`)
@@ -171,20 +189,20 @@ const encounter = () => {
         } else {
             encounterChoice = 'fight'
             console.log(`You failed to evade ${monster.name}, you'll have to fight!`)
-            while (monstEncounterHealth > 0 && wantsToPlay === true && encounterChoice === 'fight') {
-                if ( playerInfo.health > 0 && monstEncounterHealth >= 0) {
-                    let playerStrikeDamage = Math.floor(Math.random() * 10 * atkBonus)
-                    monstEncounterHealth -= playerStrikeDamage
-                    let monsterStrikeDamage = Math.floor(Math.random() * 10 * monster.attackModifier * defBonus)
-                    playerInfo.health -= monsterStrikeDamage
-                    console.log(`You attack for ${playerStrikeDamage} damage, ${monster.name} has ${monstEncounterHealth} hp left!`)
-                    console.log(`${monster.name} attacks for ${monsterStrikeDamage} damage, you have ${playerInfo.health} hp left!`)
-                } else if (playerInfo.health <= 0) {
-                    console.log(`You died, loser!`)
-                    playAgain()
-                    console.log(wantsToPlay)
-                }
-            }
+            fightFunction()
+            // while (monstEncounterHealth > 0 && wantsToPlay === true && encounterChoice === 'fight') {
+            //     if ( playerInfo.health > 0 && monstEncounterHealth >= 0) {
+            //         let playerStrikeDamage = Math.floor(Math.random() * 10 * atkBonus)
+            //         monstEncounterHealth -= playerStrikeDamage
+            //         let monsterStrikeDamage = Math.floor(Math.random() * 10 * monster.attackModifier * defBonus)
+            //         playerInfo.health -= monsterStrikeDamage
+            //         console.log(`You attack for ${playerStrikeDamage} damage, ${monster.name} has ${monstEncounterHealth} hp left!`)
+            //         console.log(`${monster.name} attacks for ${monsterStrikeDamage} damage, you have ${playerInfo.health} hp left!`)
+            //     } else if (playerInfo.health <= 0) {
+            //         console.log(`You died, loser!`)
+            //         playAgain()
+            //     }
+            // }
         }
         if (wantsToPlay === true){
             if (playerInfo.health <= 0) {
