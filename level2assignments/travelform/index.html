@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <img class="headerIMG" src="https://www.notion.so/image/https%3A%2F%2Fcoursework.vschool.io%2Fcontent%2Fimages%2Fsize%2Fw2000%2F2016%2F08%2F6359033294930248691178153861_airplane.jpg?table=block&id=06c0ee2c-4480-4b23-a6b4-b0dfb39f2668&spaceId=6aef2f33-de49-4357-824c-927199bca931&width=2000&userId=6e69c715-7aac-4697-b03c-184362608234&cache=v2" alt="Plane against vibrant orange sunset."> -->
+    <div class="header">
+        <h1>Travel Form</h1>
+    </div>
+    
+    <div class="formContainer">
+        <form name="travelForm">
+            First name: <input name="firstName" /> <br>
+            Last name: <input name="lastName" /> <br>
+    
+            Age: <input type="number" name="age" /><br>
+    
+            Gender:
+            Male <input type="radio" name="gender" value="Male" />
+            Female <input type="radio" name="gender" value="Female" />
+            Other <input type="radio" name="gender" value="Other" /> <br>
+    
+            Destination:
+            <select name="destination">
+                <option value="winterfell">Winterfell</option>
+                <option value="The Eyrie">The Eyrie</option>
+                <option value="Dorne">Dorne</option>
+            </select><br>
+    
+            Dietary restrictions: <br>
+            Vegetarian: <input type="checkbox" value=" Vegetarian" name="dietRestrictions" />
+            Vegan: <input type="checkbox" value=" Vegan" name="dietRestrictions" />
+            Lactose Free: <input type="checkbox" value=" Lactose Free" name="dietRestrictions" />
+            Kosher: <input type="checkbox" value=" Kosher" name="dietRestrictions" /> <br>
+            <br>
+        
+            <button>Submit</button>
+    
+    
+        </form>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
