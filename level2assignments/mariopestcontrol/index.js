@@ -17,10 +17,21 @@ submitForm.addEventListener("submit", function(event) {
 
 
 
-//  document.addEventListener('keydown', logSubtotal)
+ document.addEventListener('keydown', hiThere)
 
-//  function logSubtotal() {
-//     goombaSubtotal.value = goombaForm.goombaAmt.value * 5
-//  }
-
-// console.log(goombaForm.goombaAmt.value)
+ function hiThere() {
+    const logSubtotal = () => {
+        if (goombaForm.goombaAmt.value > 0) {
+            goombaForm.goombaSubtotal.value = goombaForm.goombaAmt.value * 5
+        }
+        if (bobombForm.bobombAmt.value > 0) {
+            bobombForm.bobombSubtotal.value = bobombForm.bobombAmt.value * 7
+        }
+        if (cheepForm.cheepAmt.value > 0) {
+            cheepForm.cheepSubtotal.value = cheepForm.cheepAmt.value * 11
+        }
+        
+    }
+    setTimeout(logSubtotal, 10)
+    
+ }

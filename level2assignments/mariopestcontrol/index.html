@@ -14,7 +14,7 @@
     <div class="gridContainer">
         <div class="header">
             <h1>Mario Pest Control</h1>
-            <p>Enter the number of each type of baddies you caught on your last excursion so we can prepare an invoice for the princess.</p>
+            <p>Enter the number of each type of baddy you caught on your last excursion so we can prepare an invoice for the princess.</p>
         </div>
     
         <div class="goomba set row2">
@@ -23,6 +23,7 @@
             <form name="goombaForm">
                 <input class="input" type="number" name="goombaAmt" placeholder=" 0" />
                 <span> ✕ 5 coins</span>
+                <input class="input" type="number" name="goombaSubtotal" readonly placeholder="0" />
             </form>
             <img src="./files/Goomba_-_Mario_Party_Superstars.webp" alt="">
             <!-- <input type="number" id="goombaAmt" value="66"/>
@@ -36,6 +37,7 @@
             <form name="bobombForm">
                 <input class="input" type="number" name="bobombAmt" placeholder=" 0" />
                 <span> ✕ 7 coins </span>
+                <input class="input" type="number" name="bobombSubtotal" readonly placeholder="0" />
             </form>
             <img src="https://static.wikia.nocookie.net/mario/images/8/8c/Bob-omb%2C_New_Super_Mario_Bros._U.png/revision/latest?cb=20121119023919" alt="">
             <!-- <input type="number" id="bobombAmt" />
@@ -49,6 +51,7 @@
             <form name="cheepForm">
                 <input class="input" type="number" name="cheepAmt" placeholder=" 0" />
                 <span> ✕ 11 coins</span>
+                <input class="input" type="number" name="cheepSubtotal" readonly placeholder="0" />
             </form>
             <img src="https://mario.wiki.gallery/images/thumb/6/63/CheepCheepNSMBU.png/1200px-CheepCheepNSMBU.png" alt="">
             <!-- <input type="number" id="cheepAmt" />
@@ -64,12 +67,16 @@
         </div>
         <div class="row3"></div>
     
-        <div class="invoiceTotal">
-                    <h2>Invoice Amount:</h2>
-    
-                    <h2 id="total">0</h2>
+        <div class="metaRow4">
+            <div class="row4"></div>
+            <div class="invoiceTotal">
+                        <h2>Invoice Amount:</h2>
+        
+                        <h2 id="total">0</h2>
+            </div>
+            <div class="row4"></div> 
         </div>
-        <div class="row4"></div>    
+           
         <footer class="footer">
             <p>Website by Mario Mario</p>
             <p>xXx_mario69_xXx@geocities.com</p>
