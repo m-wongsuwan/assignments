@@ -9,6 +9,160 @@ body {
 h1, h3, .designNav, .nav, .designList .designName{
     font-family: 'Julius Sans One', sans-serif;
 }
+a {
+    text-decoration: none;
+}
+.header {
+    background-image: url('headerbackground.jpg');
+    background-size: cover;
+    color: white;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+}
+.header h1 {
+    padding-top: 50px;
+    font-size: 40px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+.header h2 {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    margin-left: 60px;
+}
+.header img{
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+}
+.designNav img {
+    height: 60px;
+    width: 60px;
+}
+
+.designNav {
+    height: 70px;
+    text-align: center;
+    position: relative;
+    top: -70px;
+    /* opacity: .3; */
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 25px; */
+}
+.designNav p {
+    color: rgba(255, 255, 255, 0.6);
+    flex-grow: 2;
+    text-align: center;
+}
+.spacer {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 300ms, color 300ms;
+}
+.spacer:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.9)
+}
+
+
+
+
+.authorFooter, .header h2, .content p, .designList {
+    font-family: 'Libre Baskerville', serif;
+}
+.content p {
+    font-size: 13.5px;
+    margin: 20px 50px 10px;
+    line-height: 2;
+}
+.content p .dlIcon {
+    height: 17px;
+    width: 17px;
+    background-color: rgb(217,225,205);
+    border-radius: 1px;
+}
+.content h3 {
+    margin: 0px 50px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.fileDL {
+    text-decoration: none;
+    color: rgb(139,163,137);
+    font-family: 'Julius Sans One', sans-serif;
+}
+.fileDL:hover {
+    background-color: rgb(61, 138, 159);
+    color: white;
+}
+.requirements {
+    padding-bottom: 20px;
+}
+.content1 {
+    position: relative;
+    top: -50px;
+}
+.content2 {
+    background-color: rgb(188,213,198);
+    background-image: url('http://www.csszengarden.com/214/bamboo.png');
+    background-size: cover;
+    padding: 30px 0px;
+}
+
+.content1 h3, .content3 h3 {
+    margin-top: 30px;
+}
+
+.icons {
+    background-color: rgb(19,67,71);
+    height: 122px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 25%;
+}
+.icons img {
+    height: 50px;
+    width: 50px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+.authorFooter {
+    height: 180px;
+    background-image: url('authorbackground.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    line-height: 2;
+}
+.authorFooter p a {
+    font-style: normal;
+    color: white; 
+    text-decoration: none;
+    opacity: 1 !important;
+}
+.authorFooter p {
+    color:rgba(255, 255, 255, 0.4);
+    opacity: .8;
+}
+.authorFooter p a:hover {
+    text-decoration: underline;
+}
 .designList {
     font-size: 12px;
     color: #c0cac3;
@@ -34,137 +188,127 @@ h1, h3, .designNav, .nav, .designList .designName{
     height: 80px;
     line-height: 1.7;
 }
-/* .designList .designerName, .designList li {
-    font-family: 'Libre Baskerville', serif;
-} */
-.header h2 {
-    font-size: 16px;
-}
-.header {
-    background-image: url('headerbackground.jpg');
-    background-size: cover;
-    color: white;
-    height: 250px
-}
-/* .header .imgContainer {
-    grid-area: a;
-}
-.header .h1Container {
-    grid-area: b;
-}
-.header .h2Container {
-    grid-area: c;
-} */
-
-.designNav .spacer {
-    height: 70px;
-    width: 70px;
-    background-color: black;
-}
-.designNav {
-    height: 70px;
-    background-color: white;
-    text-align: center;
-    position: relative;
-    top: -70px;
-    opacity: .3;
-    font-size: 16px;
-    padding: 25px;
-}
 .nav {
     background-color: rgb(188,213,198);
     background-image: url('http://www.csszengarden.com/214/bamboo.png');
     background-size: cover;
 }
-.gc2 {
-    position: absolute;
-}
-
-.header h2 {
-    width: 100%;
-}
-
-.authorFooter, .header h2, .content p, .designList {
-    font-family: 'Libre Baskerville', serif;
-}
-.content p {
-    font-size: 13.5px;
-    margin: 20px 50px 10px;
-    line-height: 2;
-}
-.content h3 {
-    margin: 0px 50px;
-    font-size: 20px;
-}
-
-.header img{
-    width: 80px;
-    height: 80px;
-}
-.content1 {
-    position: relative;
-    top: -50px;
-}
-.content2 {
-    background-color: rgb(188,213,198);
-    background-image: url('http://www.csszengarden.com/214/bamboo.png');
-    background-size: cover;
-    padding: 30px 0px;
-}
-
-.content1 h3, .content3 h3 {
-    margin-top: 30px;
-}
-
-.footer {
-    background-color: rgb(19,67,71);
-    height: 122px;
-}
-.authorFooter {
-    height: 180px;
-    background-image: url('authorbackground.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;
-    font-size: 23px;
-    color: white;
-    text-align: center;
-    font-style: italic;
-    line-height: 2;
-}
-
-.authorFooter p {
-    opacity: .5;
-}
-.authorFooter p a {
-    font-style: normal;
-    color: white; 
-    text-decoration: none;
-    opacity: 1 !important;
-}
-.authorFooter p a:hover {
-    text-decoration: underline;
-}
 
 @media only screen and (min-width: 1131px) {
-    h1 {
-        font-family: 'Julius Sans One', sans-serif;
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "a b"
+            "c d"
+            "e f"
+            "g q"
+            "h h"
+            "i i";
+            position: absolute;
+            top: -40px;
+            /* this is a dirty pixel based fix, relative top -310 was leaving an empty space at the bottom*/
+    }
+    .cheekyBackgroundHolder{
+        background-image: url('headerbackground.jpg');
+        background-size: cover;
+        height: 310px;
+    }
+    .header {
+        grid-area: a;
+        background-image: none;
+        height: 310px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .header h1 {
+        font-size: 60px;
+    }
+    .header h2 {
+        font-size: 24px;
+    }
+    .header img {
+        height: 120px;
+        width: 120px
+    }
+    .designNav {
+        grid-area: b;
+        height: auto;
+        position: static;
+        top: auto;
+        margin-right: 20px;
+    }
+    .spacer {
+        margin: 2px;
+    }
+    .spacer1 {
+        opacity: 0;
+    }
+    .designList{
+        grid-area: d;
+        /* background-color: ; */
+    }
+    .content {
+        /* margin-left: 70px; 
+        causes background color of content2 to come off the edge*/
+    }
+    .content1 {
+        grid-area: c;
+        position: static;
+    }
+    .content2{
+        grid-area: e;
+    }
+    .content p, .content h3 {
+        margin-left: 90px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+    .content h3 {
+        font-size: 29px;
+    }
+    .content3{
+        grid-area: g;
+    }
+    .authorFooter{
+        grid-area: h;
+        font-size: 32px;
+        height: 310px;
+    }
+    .icons{
+        grid-area: i;
+        height: 176px;
+    }
+    .icons img {
+        height: 72px;
+        width: 72px;
+    }
+    .divitis, .designNav, .designList {
+        background-color: rgba(25, 68, 41, 0.2);
+    }
+    .nav li, .designList li{
+        width: 100%;
+        /* display: inline-block; */
+        min-height: 60px;
+        /* padding: 20px 40px; */
+        border-bottom: 1px solid #61685744;
+    }
+    .nav{
+        grid-area: f;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        font-size: 19px;
+        background-color: rgba(59, 94, 73, .5);
+    }
+    .designName {
+        font-size: 19px;
+    }
+    .designList li {
+        font-size: 14px;
+        margin: 10px auto;
+        padding-bottom: 20px;
     }
 }
-
-.test {
-    font-family: 'verdemoderna';
-}
-
-@font-face {
-	font-family: 'verdemoderna';
-	src:url('verdemoderna.eot');
-	src:url('verdemoderna.eot?#iefix') format('embedded-opentype'),
-		url('verdemoderna.woff') format('woff'),
-		url('verdemoderna.ttf') format('truetype'),
-		url('verdemoderna.svg#verdemoderna') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}                                                                                                               
