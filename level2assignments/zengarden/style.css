@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(239,245,241);
+}
+h1, h3, .designNav, .nav, .designList .designName{
+    font-family: 'Julius Sans One', sans-serif;
+}
+.designList {
+    font-size: 12px;
+    color: #c0cac3;
+}
+.designName {
+    text-decoration: none;
+    color: #607476;
+    font-size: 16px;
+}
+.designerName {
+    color: #616857;
+    text-decoration: none;
+}
+
+.nav li, .designList li{
+    width: 49%;
+    display: inline-block;
+    min-height: 60px;
+    padding: 20px 40px;
+    border-bottom: 1px solid #61685744;
+}
+.designList li{
+    height: 80px;
+    line-height: 1.7;
+}
+/* .designList .designerName, .designList li {
+    font-family: 'Libre Baskerville', serif;
+} */
+.header h2 {
+    font-size: 16px;
+}
+.header {
+    background-image: url('headerbackground.jpg');
+    background-size: cover;
+    color: white;
+    height: 250px
+}
+/* .header .imgContainer {
+    grid-area: a;
+}
+.header .h1Container {
+    grid-area: b;
+}
+.header .h2Container {
+    grid-area: c;
+} */
+
+.designNav .spacer {
+    height: 70px;
+    width: 70px;
+    background-color: black;
+}
+.designNav {
+    height: 70px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    top: -70px;
+    opacity: .3;
+    font-size: 16px;
+    padding: 25px;
+}
+.nav {
+    background-color: rgb(188,213,198);
+    background-image: url('http://www.csszengarden.com/214/bamboo.png');
+    background-size: cover;
+}
+.gc2 {
+    position: absolute;
+}
+
+.header h2 {
+    width: 100%;
+}
+
+.authorFooter, .header h2, .content p, .designList {
+    font-family: 'Libre Baskerville', serif;
+}
+.content p {
+    font-size: 13.5px;
+    margin: 20px 50px 10px;
+    line-height: 2;
+}
+.content h3 {
+    margin: 0px 50px;
+    font-size: 20px;
+}
+
+.header img{
+    width: 80px;
+    height: 80px;
+}
+.content1 {
+    position: relative;
+    top: -50px;
+}
+.content2 {
+    background-color: rgb(188,213,198);
+    background-image: url('http://www.csszengarden.com/214/bamboo.png');
+    background-size: cover;
+    padding: 30px 0px;
+}
+
+.content1 h3, .content3 h3 {
+    margin-top: 30px;
+}
+
+.footer {
+    background-color: rgb(19,67,71);
+    height: 122px;
+}
+.authorFooter {
+    height: 180px;
+    background-image: url('authorbackground.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    line-height: 2;
+}
+
+.authorFooter p {
+    opacity: .5;
+}
+.authorFooter p a {
+    font-style: normal;
+    color: white; 
+    text-decoration: none;
+    opacity: 1 !important;
+}
+.authorFooter p a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 1131px) {
+    h1 {
+        font-family: 'Julius Sans One', sans-serif;
+    }
+}
+
+.test {
+    font-family: 'verdemoderna';
+}
+
+@font-face {
+	font-family: 'verdemoderna';
+	src:url('verdemoderna.eot');
+	src:url('verdemoderna.eot?#iefix') format('embedded-opentype'),
+		url('verdemoderna.woff') format('woff'),
+		url('verdemoderna.ttf') format('truetype'),
+		url('verdemoderna.svg#verdemoderna') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}                                                                                                               
