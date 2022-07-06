@@ -135,17 +135,10 @@ h1, h2, h3 {
 }
 
 @media only screen and (min-width: 850px) {
-    /* .gridContainer {
-        display: grid;
-        grid-column: 200px 200px 200px;
-        grid-template-areas: 
-            "a a a"
-            "b c d"
-            ". e ."
-            "i i i"
-            "f f f";
+    .gridContainer {
+        width: 100%;
     }
-     */
+    
      div {
         display: inline-block;
      }

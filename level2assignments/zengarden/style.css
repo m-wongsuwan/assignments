@@ -136,6 +136,9 @@ a {
     border: 1px solid grey;
     border-radius: 50%;
 }
+.icons img:hover {
+    background-color: rgba(255, 255, 255, 0.4) ;
+}
 .authorFooter {
     height: 180px;
     background-image: url('authorbackground.jpg');
@@ -261,7 +264,7 @@ a {
         grid-area: e;
     }
     .content p, .content h3 {
-        margin-left: 90px;
+        margin-left: 120px;
     }
     .content p {
         font-size: 16px;
@@ -289,7 +292,7 @@ a {
         background-color: rgba(25, 68, 41, 0.2);
     }
     .nav li, .designList li{
-        width: 100%;
+        width: 300px;
         /* display: inline-block; */
         min-height: 60px;
         /* padding: 20px 40px; */

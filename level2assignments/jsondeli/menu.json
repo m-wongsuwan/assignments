@@ -1,0 +1,69 @@
+{
+    "appetizers": [
+        {
+            "name": "Chicken Fingers",
+            "ingredients": ["hair", "checkin", "breading"],
+            "description": "A delightful checkin fungor sorprise"
+        },
+        {
+            "name": "nuts",
+            "ingredients": ["cashew", "alamonde", "pea"],
+            "description": "A delightful nut bowl"
+        },
+        {
+            "name": "hair",
+            "ingredients": ["blond", "brunette", "red"],
+            "description": "A delightful hair bowl"
+        }
+    ],
+    "cold sandwiches": [
+        {
+            "name": "turkey sub",
+            "ingredients": ["turkey", "agreeableness", "sugar"],
+            "description": "A delightful turkey sorprise"
+        },
+        {
+            "name": "turkey dom",
+            "ingredients": ["turkey", "power", "pepper"],
+            "description": "a delightful turkey meal"
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name": "hummus burger",
+            "ingredients": ["hummus", "wheat", "salt"],
+            "description": "goo between slices of bread"
+        },
+        {
+            "name": "mushy goo-wich",
+            "ingredients": ["mush", "goo", "witch"],
+            "description": "it's sloppy and wet"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "cold dairy",
+            "ingredients": ["milk", "cream", "chocolate"],
+            "description": "i believe it's called ice cream"
+        },
+        {
+            "name": "brownie",
+            "ingredients": ["sugar", "flour", "choco chips"],
+            "description": "it's good, belive me ok"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "pop",
+            "ingredients": ["sugar", "water", "flavor"],
+            "description": "and carbonation"
+        },
+        {
+            "name": "water",
+            "ingredients": ["water"],
+            "description": "and carbonation"
+        }
+    ]
+    
+    
+}
