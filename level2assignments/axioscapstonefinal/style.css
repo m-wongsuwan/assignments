@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+body {
+    background-color: rgba(119,136,143, .3);
+}
+img {
+    max-height: 300px;
+    max-width: 300px;
+    display: block
+}
+
+#listDisplay {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#listDisplay div {
+    width: 300px;
+    border-bottom: 2px black solid;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#listDisplay div img {
+    margin: 0px auto;
+}
+
+#listDisplay input{
+    display: block;
+    height: 30px;
+    font-size: 20px;
+
+}
+#listDisplay button {
+    margin-bottom: 10px;
+}
+span {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+form {
+    /* display: flex; */
+    text-align: center;
+    font-size: 20px;
+}
+form input {
+    height: 40px;
+    font-size: 15px;
+    /* font-weight: bold; */
+    width: 40%;
+}
+form button {
+    height: 50px;
+    width: 30%;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    form input {
+    font-size: 25px;
+    }
+    #listDisplay {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    #listDisplay {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #listDisplay {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

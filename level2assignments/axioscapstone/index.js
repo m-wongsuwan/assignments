@@ -10,13 +10,16 @@ function getData(){
 
 function listData(data) {
     clearList()
-    for (let i = 0; i < data.length; i++) {
-        
+    for (let i = 0; i < data.length; i++) {        
         // listDisplay.innerHTML +=
         // listDisplay.innerHTML += "<input type='checkbox' class='check " + data[i]._id + "' id='check" + [i] +"' />"
         _idArray.push(data[i]._id)
         if (data[i].completed) {
-            listDisplay.innerHTML += "<h1 STYLE=\"text-decoration: line-through\">" + data[i].title + "</h1>"
+            let h1 = document.createElement("h1")
+            h1.textContent = data[i].title
+            // linethrough
+            // h1.style.color = "red"
+            listDisplay.appendChild(h1)
         } else {
             let h1 = document.createElement("h1")
             h1.textContent = data[i].title
@@ -25,7 +28,8 @@ function listData(data) {
         
         let h2 = document.createElement("h2")
         h2.textContent = data[i].description
-        listDisplay.appendChild(h2)
+        h1.appendChild(h2)
+        
 
         listDisplay.innerHTML += "<span>Mark done</span><input type='checkbox' class='check " + data[i]._id + "' id='check" + [i] +"' /><button class='delete delete" + [i] + "' id='delete" + [i] + "'>Delete entry</button>"
 
