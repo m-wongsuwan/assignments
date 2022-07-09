@@ -11,6 +11,7 @@ function getData(){
 function listData(arr) {
     clearList()
     for(let i = 0; i < arr.length; i++){
+        //fulfill the promise including cathc
         const div = document.createElement("div")
         listDisplay.appendChild(div)
         
@@ -24,10 +25,10 @@ function listData(arr) {
         const delBtn = document.createElement("button")
         delBtn.textContent = "Delete Entry"
         div.appendChild(delBtn)
-        delBtn.addEventListener("click", ()=>{
-            
+        delBtn.addEventListener("click", ()=>{            
             axios.delete("https://api.vschool.io/morganw/todo/" + arr[i]._id)
                 .then(response => getData())
+                .catch(error => console.log(error))
         })
 
         const checkDone = document.createElement("button")
@@ -37,12 +38,14 @@ function listData(arr) {
         checkDone.addEventListener("click", () =>{
             axios.put("https://api.vschool.io/morganw/todo/" + arr[i]._id, {completed: true})
                 .then(response => getData())
+                .catch(error => console.log(error))
         })
         
         const editBtn = document.createElement("button")
         editBtn.textContent = "Edit"
         div.appendChild(editBtn)
         const br = document.createElement("br")
+        // text styling rather than br
         div.appendChild(br)
         if (arr[i].price !== undefined) {
             const span = document.createElement("span")
@@ -137,6 +140,7 @@ function listData(arr) {
 
                 axios.put("https://api.vschool.io/morganw/todo/" + arr[i]._id, editedEntry)
                     .then(getData)
+                    .catch(error => console.log(error))
             }
 
             )
