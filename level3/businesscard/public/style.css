@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+body {
+    background-color: rgb(35, 37, 44);
+    color: white
+}
+
+
+.everythingContainer {
+    width: 317px;
+    margin: 50px auto;
+    background-color: rgb(26, 27, 33);
+}
+
+.infoContainer {
+    text-align: center;
+}
+.infoContainer img {
+    width: 100%;
+    height: 317px;
+    border-radius: 10px 10px 0 0;
+}
+.infoContainer h1 {
+    font-size: 25px;
+}
+.infoContainer h3 {
+    font-size: 13px;
+}
+.infoContainer a {
+    font-size: 10.2px;
+}
+.infoContainer button
+.footer img {
+    height: 40px;
+    width: 50px;
+}
+.footer {
+    background-color: rgb(22,22,25);
+    display: flex;
+}
