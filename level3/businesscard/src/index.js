@@ -12,8 +12,10 @@ function App() {
     return (
         <div className="everythingContainer">
             <Info />
-            <About />
-            <Interests />
+            <div className="content">
+                <About />
+                <Interests />
+            </div>
             <Footer />
         </div>
     )

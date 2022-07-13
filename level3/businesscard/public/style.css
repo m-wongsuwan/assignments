@@ -14,6 +14,7 @@ body {
     width: 317px;
     margin: 50px auto;
     background-color: rgb(26, 27, 33);
+    border-radius: 0 0 10px 10px;
 }
 
 .infoContainer {
@@ -26,19 +27,82 @@ body {
 }
 .infoContainer h1 {
     font-size: 25px;
+    margin: 21px 0px 5px;
 }
 .infoContainer h3 {
     font-size: 13px;
+    color: #F3BF99;
+    font-weight: 400;
+}
+.infoContainer p {
+    padding-top: 15px;
 }
 .infoContainer a {
     font-size: 10.2px;
+    text-decoration: none;
+    color: white;    
+    /* margin: 21px 0px; */
 }
-.infoContainer button
+.infoContainer button {
+    /* display: flex; */
+    width: 115px;
+    height: 34px;
+    border: none;
+    border-radius: 6px;
+    margin: 5px 8px
+}
+.inBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.emailBtn {
+    background-color: #D1D5DB;
+    /* float: left; */
+}
+.emailBtn img {
+    height: 20px;
+    width: 20px;
+    border-radius: 0%;
+}
+.linkedInBtn img {
+    height: 20px;
+    width: 20px;
+    border-radius: 0%;
+    margin-right: 4px;
+}
+.linkedInBtn {
+    background-color: #5093E2;
+    color: white;
+}
+
+.content {
+    margin: 24px 34px;
+}
+.content h2 {
+    font-size: 16px;
+    padding: 0px 0px 7px
+}
+.content p {
+    font-size: 12px;
+    padding-bottom: 20px;
+    line-height: 1.7;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 70px;
+}
 .footer img {
-    height: 40px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 15%;
 }
 .footer {
     background-color: rgb(22,22,25);
     display: flex;
+    height: 64px;
+    border-radius: 0 0 10px 10px;
 }
