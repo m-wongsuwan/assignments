@@ -5,17 +5,25 @@ import data from './data.js'
 
 export default function App() {
     const itemsArr = data.map(item => {
+        const hrOrNo = function() {
+            if (item.title !== 'ICF 2022') {
+                return <hr />
+            }
+        }
         return (
-            <Entry 
-                item={item}/>
+            <div className="tester">
+                <Entry 
+                    item={item}/>
+                    {hrOrNo()}
+            </div>
+                
         )
     })
     
     return (
         <div>
             <Banner />
-            <section>
-                {/* change to map */}
+            <section className="mainContent">
                 {itemsArr}
             </section>
         </div>
