@@ -5,11 +5,11 @@ import data from './data.js'
 
 export default function App() {
     const itemsArr = data.map(item => {
-        const hrOrNo = function() {
-            if (item.title !== 'ICF 2022') {
-                return <hr />
-            }
-        }
+        // const hrOrNo = function() {
+        //     if (item.title !== 'ICF 2022') {
+        //         return <hr />
+        //     }
+        // }
         return (
             <div className="tester">
                 <Entry 
