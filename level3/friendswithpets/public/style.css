@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, black , white);
+}
+.appContainer {
+    display: flex;
+}
+.headerBox {
+    height: 600px;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    color: white
+}
+.friendBox {
+    min-height: 150px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition-duration: 500ms;
+    background-image: linear-gradient(180deg, black , gray);
+    color: white;
+}
+section:nth-child(even) {
+    background-color: bisque;
+}
+.friendBox:hover {
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.3);
+}
+section:nth-child(odd) {
+    background-color: turquoise;
+
+}

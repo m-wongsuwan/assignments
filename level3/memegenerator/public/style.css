@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+    font-family: Karla;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #672280, #A626D3) ;
+    height: 65px;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+header h2 {
+    flex: 1;
+    font-weight: 700;
+    font-size: 24px;
+}
+header h4 {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+#trollIcon {
+    height: 100%; 
+    margin-right: 13px;  
+}
+.content {
+    /* width: 560px; */
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* form .inputs {
+    display: flex; 
+    justify-content: space-between;
+} */
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 20px;
+}
+form input {
+    /* height: 35px; */
+    /* width: 240px; */
+    /* margin: 20px 0 15px; */
+    border-radius: 5px;
+    border-color: #D5D4D8;
+    text-indent: 10px;
+}
+button {
+    /* height: 40px; */
+    /* width: 100%; */
+    background-image: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    border: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    grid-column: 1 / -1;
+    cursor: pointer;
+}
+.imgBox {
+    display: flex;
+    justify-content: center;
+}
+.memeImage {
+    max-width: 400px;
+    max-height: 600px;
+    margin: 40px;
+}
+@media only screen and (min-width: 800px) {
+    .memeImage {
+        max-width: 600px;
+        max-height: 600px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .memeImage {
+        max-width: 800px;
+        max-height: 700px;
+
+    }
+}

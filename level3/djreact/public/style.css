@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: beige;
+}
+.squaresContainer {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.colorBox {
+    background-color: rgba(100,100,100,.5);
+    border: 1px solid black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlsBox {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 15px;
+    grid-template-rows: repeat(4, 40px);
+    justify-content: center;
+    margin-top: 15px;
+}
+.controlsBox button {
+    border: none;
+    background-color: azure;
+    font-weight: 700;
+    border-radius: 6px;
+}
