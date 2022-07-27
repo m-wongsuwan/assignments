@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECECEC;
+}
+.daBox {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    border-radius: 200px 0px 200px 50px;
+    transition-duration: 1s;
+}
+.daBox:hover {
+    opacity: .9;
+}
+.heyThere {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0px 10px 0px 10px;
+    font-weight: 700;
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: 20px;
+
+}
+/* .daBox button {
+    flex-basis: 100%;
+} */
